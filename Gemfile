@@ -15,5 +15,7 @@ group :development, :test do
   gem 'byebug'
   gem 'favorite_things'
   gem 'web-console', '~> 2.0'
+  gem 'colored'
+  gem 'faker'
 end
 

@@ -44,12 +44,15 @@ GEM
     byebug (4.0.5)
       columnize (= 0.9.0)
     coderay (1.1.0)
+    colored (1.2)
     columnize (0.9.0)
     debug_inspector (0.0.2)
     did_you_mean (0.9.7)
       interception
     erubis (2.7.0)
     execjs (2.5.2)
+    faker (1.4.3)
+      i18n (~> 0.5)
     favorite_things (0.1.7)
       awesome_print
       did_you_mean
@@ -171,6 +174,8 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  colored
+  faker
   favorite_things
   haml-rails
   jquery-rails

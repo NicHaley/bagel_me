@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  sub_total: 9.99
+  total: 9.99
+  stripe_id: MyString
+
+two:
+  order_id: 1
+  sub_total: 9.99
+  total: 9.99
+  stripe_id: MyString
