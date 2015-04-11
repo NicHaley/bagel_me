@@ -1,17 +1,44 @@
 puts "\nCreating items"
-20.times do
+%w[
+Montreal
+Sesame
+Poppy Seed
+Blue Berry
+Whole Wheat
+Plain
+Everything
+Cinnamon Raisin
+Four Cheese
+Sesame Seed
+12 Grain
+Sundried Tomato Asiago
+Maple Cinnamon French Toast
+Jalapeno Asiago Mozzarella
+Pretzel
+].each do |name|
   Item.create!(
-    name: Faker::Commerce.product_name,
+    name: name,
     cost: Faker::Commerce.price
   )
   print "|".green
 end
 
 puts "\nCreating components"
-60.times do
+%w[
+Butter
+Peanut Butter
+Jam
+Cream Cheese
+Ketchup
+Egg
+Hummus
+Lox
+Nuttella
+Pizza
+].each do |name|
   Component.create!(
     item_id: Item.all.sample.id,
-    name: Faker::Commerce.product_name,
+    name: name,
     cost: Faker::Commerce.price
   )
   print "|".green
@@ -19,7 +46,7 @@ end
 
 
 puts "\nCreating users"
-100.times do
+50.times do
   u = User.create!(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name
